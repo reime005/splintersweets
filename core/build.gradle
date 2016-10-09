@@ -1,0 +1,25 @@
+apply plugin: "java"
+apply plugin: 'kotlin'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+test.ignoreFailures = true
+sourceSets.main.java.srcDirs = [ "src/"]
+sourceSets.test.java.srcDirs = [ "test/"]
+
+configurations { natives }
+
+dependencies {
+    sourceCompatibility = 1.7
+    targetCompatibility = 1.7
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+    compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+    compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+
+    testCompile "junit:junit:$junitVersion"
+    testCompile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+}

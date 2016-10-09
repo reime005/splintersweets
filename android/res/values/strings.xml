@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Splinter Sweets</string>
+    <string name="logout_succeed">Logout Succeeded</string>
+    <string name="login_succeed">Login Succeeded</string>
+    <string name="login_failed">Login Failed</string>
+
+    <string name="app_id">1092360994879</string>
+
+</resources>

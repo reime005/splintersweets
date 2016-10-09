@@ -1,0 +1,167 @@
+
+sprites.png
+size: 2048,2048
+format: RGBA8888
+filter: MipMapLinearNearest,Linear
+repeat: none
+background
+  rotate: false
+  xy: 2, 1026
+  size: 1600, 900
+  orig: 1600, 900
+  offset: 0, 0
+  index: -1
+button_again
+  rotate: false
+  xy: 422, 632
+  size: 181, 182
+  orig: 181, 182
+  offset: 0, 0
+  index: -1
+button_audio_off
+  rotate: false
+  xy: 632, 842
+  size: 180, 182
+  orig: 180, 182
+  offset: 0, 0
+  index: -1
+button_audio_on
+  rotate: false
+  xy: 422, 449
+  size: 180, 181
+  orig: 180, 181
+  offset: 0, 0
+  index: -1
+button_leaderboard
+  rotate: false
+  xy: 1604, 1114
+  size: 180, 182
+  orig: 180, 182
+  offset: 0, 0
+  index: -1
+button_pause
+  rotate: false
+  xy: 1814, 1324
+  size: 180, 182
+  orig: 180, 182
+  offset: 0, 0
+  index: -1
+button_quit
+  rotate: false
+  xy: 2, 2
+  size: 180, 182
+  orig: 180, 182
+  offset: 0, 0
+  index: -1
+button_resume
+  rotate: false
+  xy: 212, 212
+  size: 180, 182
+  orig: 180, 182
+  offset: 0, 0
+  index: -1
+jellybig_red
+  rotate: false
+  xy: 2, 816
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+jellybig_red_anim_0
+  rotate: false
+  xy: 1604, 1718
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+jellybig_red_anim_1
+  rotate: false
+  xy: 2, 606
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+jellybig_red_anim_2
+  rotate: false
+  xy: 212, 816
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+jellybig_red_anim_3
+  rotate: false
+  xy: 1604, 1508
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+mmstroke_brown
+  rotate: false
+  xy: 976, 896
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+mmstroke_brown_anim_0
+  rotate: false
+  xy: 1814, 1718
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+mmstroke_brown_anim_1
+  rotate: false
+  xy: 2, 396
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+mmstroke_brown_anim_2
+  rotate: false
+  xy: 212, 606
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+mmstroke_brown_anim_3
+  rotate: false
+  xy: 422, 816
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+swirl_pink
+  rotate: false
+  xy: 814, 864
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+swirl_pink_anim_0
+  rotate: false
+  xy: 1604, 1298
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+swirl_pink_anim_1
+  rotate: false
+  xy: 1814, 1508
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+swirl_pink_anim_2
+  rotate: false
+  xy: 2, 186
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+swirl_pink_anim_3
+  rotate: false
+  xy: 212, 396
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1

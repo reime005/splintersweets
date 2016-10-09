@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1092360994879",
+    "firebase_url": "https://splinter-sweets-66487259.firebaseio.com",
+    "project_id": "splinter-sweets-66487259",
+    "storage_bucket": "splinter-sweets-66487259.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092360994879:android:16b8ec6128026a16",
+        "android_client_info": {
+          "package_name": "de.reimerm.splintersweets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092360994879-8m1ki1gtjseni28ud2d9s3q2cnmfl4c0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "de.reimerm.splintersweets",
+            "certificate_hash": "BEE7525852E24D6DC5AD8058166B4524C2C676E5"
+          }
+        },
+        {
+          "client_id": "1092360994879-rmcme61ns42of584cku8eo5ov29r0n5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaRci4rUfaFLtDO2MnCPXZ5Q0SketCggU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092360994879-rmcme61ns42of584cku8eo5ov29r0n5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

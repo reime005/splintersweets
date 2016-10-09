@@ -1,0 +1,57 @@
+import groovy.json.JsonSlurper
+
+buildscript {
+
+    ant.get(src: 'http://libgdx.badlogicgames.com/libgdx-site/service/getVersions?release=false', dest: 'versions.json')
+    def versionFile = file('versions.json')
+    def json
+    if (versionFile.exists()) {
+        json = new JsonSlurper().parseText(versionFile.text)
+    } else throw new GradleException("Unable to retrieve latest versions, please check your internet connection")
+
+
+    ext {
+        appName = "Splinter Sweets"
+
+        kotlin_version = '1.0.4'
+        junitVersion = '4.12'
+        
+        gdxVersion = json.libgdxSnapshot
+        androidToolsVersion = json.androidBuildtoolsVersion
+        androidSDKVersion = json.androidSDKVersion
+        androidGradleToolsVersion = json.androidGradleToolVersion
+    }
+
+    repositories {
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:3.0.0'
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "2.13"
+}
+
+allprojects {
+    apply plugin: "idea"
+
+    repositories {
+        jcenter()
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        maven { url "https://maven.java.net/content/groups/public/" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
