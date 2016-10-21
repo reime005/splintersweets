@@ -56,7 +56,6 @@ object AssetsManager : Disposable {
     }
 
     fun loadAssets() {
-        manager = AssetManager()
         manager.load(Resources.BACKGROUND_MUSIC, Music::class.java)
         manager.load(Resources.SOUND_BLOP, Sound::class.java)
         manager.load(Resources.SOUND_BUZZ, Sound::class.java)
@@ -64,9 +63,11 @@ object AssetsManager : Disposable {
         manager.load(Resources.FONT_PATH, BitmapFont::class.java)
         manager.load(Resources.GAME_OVER_FONT_PATH, BitmapFont::class.java)
         manager.load(Resources.GAME_OVER_SCORE_FONT_PATH, BitmapFont::class.java)
+        manager.finishLoading()
+        loadAtlas()
     }
 
-    fun loadAtlas() {
+    private fun loadAtlas() {
         textureAtlas = manager.get(Resources.SPRITES_ATLAS_PATH, TextureAtlas::class.java)
 
         for (e in Resources.RegionNames.values()) {

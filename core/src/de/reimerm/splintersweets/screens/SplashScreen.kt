@@ -75,8 +75,6 @@ class SplashScreen : Screen {
             thread {
                 Gdx.app.postRunnable {
                     AssetsManager.loadAssets()
-                    AssetsManager.manager.finishLoading()
-                    AssetsManager.loadAtlas()
                     loaded = true
                 }
             }
