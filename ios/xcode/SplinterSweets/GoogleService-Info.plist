@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-9059743820788712/5862535785</string>
+	<key>CLIENT_ID</key>
+	<string>com.googleusercontent.apps.159744795113-dqagm8plurhkra69dpqu81s9b5tsbl9u</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.159744795113-dqagm8plurhkra69dpqu81s9b5tsbl9u</string>
+	<key>API_KEY</key>
+	<string>000000000000000000000000000000000000000</string>
+	<key>GCM_SENDER_ID</key>
+	<string>999999999999</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hmack.hammerize</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<false/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string></string>
+	<key>DATABASE_URL</key>
+	<string></string>
+</dict>
+</plist>

@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03ACC9CF1CDFA73500656F5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ACC9CE1CDFA73500656F5D /* UIKit.framework */; };
+		03ACC9D61CDFA75800656F5D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ACC9D01CDFA75700656F5D /* AudioToolbox.framework */; };
+		03ACC9D71CDFA75800656F5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ACC9D11CDFA75800656F5D /* AVFoundation.framework */; };
+		03ACC9D81CDFA75800656F5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ACC9D21CDFA75800656F5D /* CoreGraphics.framework */; };
+		03ACC9D91CDFA75800656F5D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ACC9D31CDFA75800656F5D /* CoreMotion.framework */; };
+		03ACC9DA1CDFA75800656F5D /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ACC9D41CDFA75800656F5D /* OpenAL.framework */; };
+		03ACC9DD1CDFA76400656F5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ACC9DC1CDFA76400656F5D /* QuartzCore.framework */; };
+		03E2841C1CDFA83B005BA4F0 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 03E2841B1CDFA83B005BA4F0 /* assets */; };
+		0C1BAA8C7E83493FC22B03BF /* MOE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69A4873AD453213FB9FC82C /* MOE.framework */; };
+		290DA2811D8726520063635C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 290DA2801D8726520063635C /* Default-568h@2x.png */; };
+		292962D61D8D6B3C00929CEC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292962D51D8D6B3C00929CEC /* OpenGLES.framework */; };
+		296641C51D7D87CE0084123C /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B39F1D7D72D1003AA7FD /* GoogleAppUtilities.framework */; };
+		296641C71D7D87CE0084123C /* GoogleAuthUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3A01D7D72D1003AA7FD /* GoogleAuthUtilities.framework */; };
+		296641C91D7D87CE0084123C /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3A11D7D72D1003AA7FD /* GoogleNetworkingUtilities.framework */; };
+		296641CF1D7D87CE0084123C /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3A41D7D72D1003AA7FD /* GoogleSignIn.framework */; };
+		296641D31D7D87CE0084123C /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3A61D7D72D1003AA7FD /* GoogleUtilities.framework */; };
+		296641D51D7D87CE0084123C /* gpg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3A71D7D72D1003AA7FD /* gpg.framework */; };
+		29B2E39E1D81B47800D5A096 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B2E39D1D81B47800D5A096 /* MessageUI.framework */; };
+		29B2E3A01D81B48A00D5A096 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B2E39F1D81B48A00D5A096 /* MobileCoreServices.framework */; };
+		29B2E3A21D81B4CC00D5A096 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B2E3A11D81B4CC00D5A096 /* CFNetwork.framework */; };
+		29B2E3A41D81B4E700D5A096 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B2E3A31D81B4E700D5A096 /* AdSupport.framework */; };
+		29B2E3A61D81B4EE00D5A096 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B2E3A51D81B4EE00D5A096 /* Accounts.framework */; };
+		29B2E3A81D81B50100D5A096 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B2E3A71D81B50100D5A096 /* libsqlite3.tbd */; };
+		29B2E3AA1D81B51300D5A096 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B2E3A91D81B51300D5A096 /* Social.framework */; };
+		29B2E3AC1D81B51F00D5A096 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B2E3AB1D81B51F00D5A096 /* StoreKit.framework */; };
+		29B2E3AE1D81B56D00D5A096 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B2E3AD1D81B56D00D5A096 /* ImageIO.framework */; };
+		29B2E3BC1D81B77100D5A096 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B2E3BB1D81B77100D5A096 /* libxml2.2.tbd */; };
+		29C5B3AB1D7D72D1003AA7FD /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3A21D7D72D1003AA7FD /* GoogleOpenSource.framework */; };
+		29C5B3AC1D7D72D1003AA7FD /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3A31D7D72D1003AA7FD /* GooglePlus.framework */; };
+		29C5B3AE1D7D72D1003AA7FD /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3A51D7D72D1003AA7FD /* GoogleSymbolUtilities.framework */; };
+		29C5B3B41D7D72F4003AA7FD /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29C5B3B11D7D72F4003AA7FD /* GooglePlus.bundle */; };
+		29C5B3B51D7D72F4003AA7FD /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29C5B3B21D7D72F4003AA7FD /* GoogleSignIn.bundle */; };
+		29C5B3B61D7D72F4003AA7FD /* gpg.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29C5B3B31D7D72F4003AA7FD /* gpg.bundle */; };
+		29C5B3C31D7D739F003AA7FD /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3B71D7D739F003AA7FD /* AddressBook.framework */; };
+		29C5B3C41D7D739F003AA7FD /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3B81D7D739F003AA7FD /* AssetsLibrary.framework */; };
+		29C5B3C51D7D739F003AA7FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3B91D7D739F003AA7FD /* CoreLocation.framework */; };
+		29C5B3C61D7D739F003AA7FD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3BA1D7D739F003AA7FD /* CoreMedia.framework */; };
+		29C5B3C71D7D739F003AA7FD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3BB1D7D739F003AA7FD /* CoreTelephony.framework */; };
+		29C5B3C81D7D739F003AA7FD /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3BC1D7D739F003AA7FD /* CoreText.framework */; };
+		29C5B3C91D7D739F003AA7FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3BD1D7D739F003AA7FD /* Foundation.framework */; };
+		29C5B3CA1D7D739F003AA7FD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3BE1D7D739F003AA7FD /* libz.tbd */; };
+		29C5B3CB1D7D739F003AA7FD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3BF1D7D739F003AA7FD /* MediaPlayer.framework */; };
+		29C5B3CC1D7D739F003AA7FD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3C01D7D739F003AA7FD /* SafariServices.framework */; };
+		29C5B3CD1D7D739F003AA7FD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3C11D7D739F003AA7FD /* Security.framework */; };
+		29C5B3CE1D7D739F003AA7FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5B3C21D7D739F003AA7FD /* SystemConfiguration.framework */; };
+		29E9AB0B1D7CD03300D40FE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E9AB0A1D7CD03300D40FE8 /* Images.xcassets */; };
+		29FEBC441D8419B900238266 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FEBC431D8419B900238266 /* GoogleMobileAds.framework */; };
+		29FEBC461D841EE500238266 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FEBC451D841EE500238266 /* CoreBluetooth.framework */; };
+		29FEBC481D841F1600238266 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FEBC471D841F1600238266 /* CoreVideo.framework */; };
+		29FEBC4A1D841F4E00238266 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FEBC491D841F4E00238266 /* GLKit.framework */; };
+		29FEBC4C1D841F7200238266 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FEBC4B1D841F7200238266 /* EventKit.framework */; };
+		29FEBC4E1D841F9F00238266 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FEBC4D1D841F9F00238266 /* EventKitUI.framework */; };
+		29FEBC501D84731600238266 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29FEBC4F1D84731600238266 /* GoogleService-Info.plist */; };
+		3CE6F44CC68F58F172F95F17 /* MOE.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B69A4873AD453213FB9FC82C /* MOE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		56E36A8BE759DE64A317E3BB /* preregister.txt in Resources */ = {isa = PBXBuildFile; fileRef = F06A5645587B524FEAAB4FF4 /* preregister.txt */; };
+		58CC9A2221B6D58243831227 /* MOE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69A4873AD453213FB9FC82C /* MOE.framework */; };
+		7BDED603662F8D6E54531A9A /* application.jar in Resources */ = {isa = PBXBuildFile; fileRef = EA29F3AB9D4D3E916902DF5B /* application.jar */; };
+		90295D2AF919CC851D72E450 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF7C331588944C9129B593B /* main.cpp */; };
+		960FC30B876E2B7F65EBD965 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF7C331588944C9129B593B /* main.cpp */; };
+		D54D78ADDFD09C6CB7AFE5CF /* MOE.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B69A4873AD453213FB9FC82C /* MOE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DE5B6108342B5C22A1BA87A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D54D78ADDFD09C6CB7AFE5CF /* MOE.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A9F369CA2C2AA875B2749F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3CE6F44CC68F58F172F95F17 /* MOE.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03ACC9CE1CDFA73500656F5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03ACC9D01CDFA75700656F5D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		03ACC9D11CDFA75800656F5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		03ACC9D21CDFA75800656F5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		03ACC9D31CDFA75800656F5D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		03ACC9D41CDFA75800656F5D /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		03ACC9DC1CDFA76400656F5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		03E2841B1CDFA83B005BA4F0 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../../android/assets; sourceTree = "<group>"; };
+		1ED204BD74E9D5EA07497539 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		290DA2801D8726520063635C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		292962D51D8D6B3C00929CEC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		29B2E39D1D81B47800D5A096 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		29B2E39F1D81B48A00D5A096 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		29B2E3A11D81B4CC00D5A096 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		29B2E3A31D81B4E700D5A096 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		29B2E3A51D81B4EE00D5A096 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		29B2E3A71D81B50100D5A096 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		29B2E3A91D81B51300D5A096 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		29B2E3AB1D81B51F00D5A096 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		29B2E3AD1D81B56D00D5A096 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		29B2E3BB1D81B77100D5A096 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		29C5B39F1D7D72D1003AA7FD /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppUtilities.framework; sourceTree = SOURCE_ROOT; };
+		29C5B3A01D7D72D1003AA7FD /* GoogleAuthUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAuthUtilities.framework; sourceTree = SOURCE_ROOT; };
+		29C5B3A11D7D72D1003AA7FD /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleNetworkingUtilities.framework; sourceTree = SOURCE_ROOT; };
+		29C5B3A21D7D72D1003AA7FD /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = SOURCE_ROOT; };
+		29C5B3A31D7D72D1003AA7FD /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = SOURCE_ROOT; };
+		29C5B3A41D7D72D1003AA7FD /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = SOURCE_ROOT; };
+		29C5B3A51D7D72D1003AA7FD /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = SOURCE_ROOT; };
+		29C5B3A61D7D72D1003AA7FD /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = SOURCE_ROOT; };
+		29C5B3A71D7D72D1003AA7FD /* gpg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gpg.framework; sourceTree = SOURCE_ROOT; };
+		29C5B3B11D7D72F4003AA7FD /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		29C5B3B21D7D72F4003AA7FD /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		29C5B3B31D7D72F4003AA7FD /* gpg.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = gpg.bundle; sourceTree = "<group>"; };
+		29C5B3B71D7D739F003AA7FD /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		29C5B3B81D7D739F003AA7FD /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		29C5B3B91D7D739F003AA7FD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		29C5B3BA1D7D739F003AA7FD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		29C5B3BB1D7D739F003AA7FD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		29C5B3BC1D7D739F003AA7FD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		29C5B3BD1D7D739F003AA7FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		29C5B3BE1D7D739F003AA7FD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		29C5B3BF1D7D739F003AA7FD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		29C5B3C01D7D739F003AA7FD /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		29C5B3C11D7D739F003AA7FD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		29C5B3C21D7D739F003AA7FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		29E9AB0A1D7CD03300D40FE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SplinterSweets/Images.xcassets; sourceTree = "<group>"; };
+		29FEBC431D8419B900238266 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = SOURCE_ROOT; };
+		29FEBC451D841EE500238266 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		29FEBC471D841F1600238266 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		29FEBC491D841F4E00238266 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		29FEBC4B1D841F7200238266 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		29FEBC4D1D841F9F00238266 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		29FEBC4F1D84731600238266 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SplinterSweets/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		36C285E0AB4EC84EF958EE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF7C331588944C9129B593B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		53ADB2FAAB1A5F2165A74CF8 /* SplinterSweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplinterSweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9103A8B09D850A82D3B79162 /* SplinterSweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplinterSweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69A4873AD453213FB9FC82C /* MOE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOE.framework; sourceTree = MOE_FRAMEWORK_PATH; };
+		EA29F3AB9D4D3E916902DF5B /* application.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = application.jar; path = ../build/moe/main/application.jar; sourceTree = SOURCE_ROOT; };
+		F06A5645587B524FEAAB4FF4 /* preregister.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = preregister.txt; path = ../build/moe/main/preregister.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F361FCF5051FEEBA1525BEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292962D61D8D6B3C00929CEC /* OpenGLES.framework in Frameworks */,
+				29FEBC4E1D841F9F00238266 /* EventKitUI.framework in Frameworks */,
+				29FEBC4C1D841F7200238266 /* EventKit.framework in Frameworks */,
+				29FEBC4A1D841F4E00238266 /* GLKit.framework in Frameworks */,
+				29FEBC481D841F1600238266 /* CoreVideo.framework in Frameworks */,
+				29FEBC461D841EE500238266 /* CoreBluetooth.framework in Frameworks */,
+				29B2E3AC1D81B51F00D5A096 /* StoreKit.framework in Frameworks */,
+				29FEBC441D8419B900238266 /* GoogleMobileAds.framework in Frameworks */,
+				29B2E3BC1D81B77100D5A096 /* libxml2.2.tbd in Frameworks */,
+				29B2E3AE1D81B56D00D5A096 /* ImageIO.framework in Frameworks */,
+				29B2E3AA1D81B51300D5A096 /* Social.framework in Frameworks */,
+				29B2E3A81D81B50100D5A096 /* libsqlite3.tbd in Frameworks */,
+				29B2E3A61D81B4EE00D5A096 /* Accounts.framework in Frameworks */,
+				29B2E3A41D81B4E700D5A096 /* AdSupport.framework in Frameworks */,
+				29B2E3A21D81B4CC00D5A096 /* CFNetwork.framework in Frameworks */,
+				03ACC9D71CDFA75800656F5D /* AVFoundation.framework in Frameworks */,
+				29B2E3A01D81B48A00D5A096 /* MobileCoreServices.framework in Frameworks */,
+				29B2E39E1D81B47800D5A096 /* MessageUI.framework in Frameworks */,
+				29C5B3C31D7D739F003AA7FD /* AddressBook.framework in Frameworks */,
+				29C5B3C41D7D739F003AA7FD /* AssetsLibrary.framework in Frameworks */,
+				29C5B3C51D7D739F003AA7FD /* CoreLocation.framework in Frameworks */,
+				29C5B3C61D7D739F003AA7FD /* CoreMedia.framework in Frameworks */,
+				296641C71D7D87CE0084123C /* GoogleAuthUtilities.framework in Frameworks */,
+				29C5B3C71D7D739F003AA7FD /* CoreTelephony.framework in Frameworks */,
+				29C5B3C81D7D739F003AA7FD /* CoreText.framework in Frameworks */,
+				296641CF1D7D87CE0084123C /* GoogleSignIn.framework in Frameworks */,
+				29C5B3C91D7D739F003AA7FD /* Foundation.framework in Frameworks */,
+				29C5B3CA1D7D739F003AA7FD /* libz.tbd in Frameworks */,
+				29C5B3CB1D7D739F003AA7FD /* MediaPlayer.framework in Frameworks */,
+				296641C51D7D87CE0084123C /* GoogleAppUtilities.framework in Frameworks */,
+				29C5B3CC1D7D739F003AA7FD /* SafariServices.framework in Frameworks */,
+				29C5B3CD1D7D739F003AA7FD /* Security.framework in Frameworks */,
+				296641C91D7D87CE0084123C /* GoogleNetworkingUtilities.framework in Frameworks */,
+				29C5B3CE1D7D739F003AA7FD /* SystemConfiguration.framework in Frameworks */,
+				03ACC9D81CDFA75800656F5D /* CoreGraphics.framework in Frameworks */,
+				03ACC9D91CDFA75800656F5D /* CoreMotion.framework in Frameworks */,
+				03ACC9DD1CDFA76400656F5D /* QuartzCore.framework in Frameworks */,
+				03ACC9CF1CDFA73500656F5D /* UIKit.framework in Frameworks */,
+				29C5B3AB1D7D72D1003AA7FD /* GoogleOpenSource.framework in Frameworks */,
+				296641D31D7D87CE0084123C /* GoogleUtilities.framework in Frameworks */,
+				29C5B3AC1D7D72D1003AA7FD /* GooglePlus.framework in Frameworks */,
+				29C5B3AE1D7D72D1003AA7FD /* GoogleSymbolUtilities.framework in Frameworks */,
+				296641D51D7D87CE0084123C /* gpg.framework in Frameworks */,
+				03ACC9D61CDFA75800656F5D /* AudioToolbox.framework in Frameworks */,
+				03ACC9DA1CDFA75800656F5D /* OpenAL.framework in Frameworks */,
+				58CC9A2221B6D58243831227 /* MOE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7E24EB27AB7F85FFBF64DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1BAA8C7E83493FC22B03BF /* MOE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11DFED721E7C0183D04B5B52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9103A8B09D850A82D3B79162 /* SplinterSweets.app */,
+				53ADB2FAAB1A5F2165A74CF8 /* SplinterSweets.app */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		446457971163AC6B44192DC7 /* SplinterSweets */ = {
+			isa = PBXGroup;
+			children = (
+				475E31962D6DD39FE2334036 /* Supporting Files */,
+			);
+			name = SplinterSweets;
+			path = SplinterSweets;
+			sourceTree = "<group>";
+		};
+		475E31962D6DD39FE2334036 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03E2841B1CDFA83B005BA4F0 /* assets */,
+				3FF7C331588944C9129B593B /* main.cpp */,
+				1ED204BD74E9D5EA07497539 /* build.xcconfig */,
+				36C285E0AB4EC84EF958EE2A /* Info.plist */,
+				F06A5645587B524FEAAB4FF4 /* preregister.txt */,
+				EA29F3AB9D4D3E916902DF5B /* application.jar */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B096E14E5628AB34171BB72 = {
+			isa = PBXGroup;
+			children = (
+				290DA2801D8726520063635C /* Default-568h@2x.png */,
+				29FEBC4F1D84731600238266 /* GoogleService-Info.plist */,
+				29C5B3B11D7D72F4003AA7FD /* GooglePlus.bundle */,
+				29C5B3B21D7D72F4003AA7FD /* GoogleSignIn.bundle */,
+				29C5B3B31D7D72F4003AA7FD /* gpg.bundle */,
+				29E9AB0A1D7CD03300D40FE8 /* Images.xcassets */,
+				446457971163AC6B44192DC7 /* SplinterSweets */,
+				D23FFB4E57C7ECB40006115B /* Frameworks */,
+				11DFED721E7C0183D04B5B52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D23FFB4E57C7ECB40006115B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				292962D51D8D6B3C00929CEC /* OpenGLES.framework */,
+				29FEBC4D1D841F9F00238266 /* EventKitUI.framework */,
+				29FEBC4B1D841F7200238266 /* EventKit.framework */,
+				29FEBC491D841F4E00238266 /* GLKit.framework */,
+				29FEBC471D841F1600238266 /* CoreVideo.framework */,
+				29FEBC451D841EE500238266 /* CoreBluetooth.framework */,
+				29FEBC431D8419B900238266 /* GoogleMobileAds.framework */,
+				29B2E3BB1D81B77100D5A096 /* libxml2.2.tbd */,
+				29B2E3AD1D81B56D00D5A096 /* ImageIO.framework */,
+				29B2E3AB1D81B51F00D5A096 /* StoreKit.framework */,
+				29B2E3A91D81B51300D5A096 /* Social.framework */,
+				29B2E3A71D81B50100D5A096 /* libsqlite3.tbd */,
+				29B2E3A51D81B4EE00D5A096 /* Accounts.framework */,
+				29B2E3A31D81B4E700D5A096 /* AdSupport.framework */,
+				29B2E3A11D81B4CC00D5A096 /* CFNetwork.framework */,
+				29B2E39F1D81B48A00D5A096 /* MobileCoreServices.framework */,
+				29B2E39D1D81B47800D5A096 /* MessageUI.framework */,
+				29C5B3B71D7D739F003AA7FD /* AddressBook.framework */,
+				29C5B3B81D7D739F003AA7FD /* AssetsLibrary.framework */,
+				29C5B3B91D7D739F003AA7FD /* CoreLocation.framework */,
+				29C5B3BA1D7D739F003AA7FD /* CoreMedia.framework */,
+				29C5B3BB1D7D739F003AA7FD /* CoreTelephony.framework */,
+				29C5B3BC1D7D739F003AA7FD /* CoreText.framework */,
+				29C5B3BD1D7D739F003AA7FD /* Foundation.framework */,
+				29C5B3BE1D7D739F003AA7FD /* libz.tbd */,
+				29C5B3BF1D7D739F003AA7FD /* MediaPlayer.framework */,
+				29C5B3C01D7D739F003AA7FD /* SafariServices.framework */,
+				29C5B3C11D7D739F003AA7FD /* Security.framework */,
+				29C5B3C21D7D739F003AA7FD /* SystemConfiguration.framework */,
+				29C5B39F1D7D72D1003AA7FD /* GoogleAppUtilities.framework */,
+				29C5B3A01D7D72D1003AA7FD /* GoogleAuthUtilities.framework */,
+				29C5B3A11D7D72D1003AA7FD /* GoogleNetworkingUtilities.framework */,
+				29C5B3A21D7D72D1003AA7FD /* GoogleOpenSource.framework */,
+				29C5B3A31D7D72D1003AA7FD /* GooglePlus.framework */,
+				29C5B3A41D7D72D1003AA7FD /* GoogleSignIn.framework */,
+				29C5B3A51D7D72D1003AA7FD /* GoogleSymbolUtilities.framework */,
+				29C5B3A61D7D72D1003AA7FD /* GoogleUtilities.framework */,
+				29C5B3A71D7D72D1003AA7FD /* gpg.framework */,
+				03ACC9DC1CDFA76400656F5D /* QuartzCore.framework */,
+				03ACC9D01CDFA75700656F5D /* AudioToolbox.framework */,
+				03ACC9D11CDFA75800656F5D /* AVFoundation.framework */,
+				03ACC9D21CDFA75800656F5D /* CoreGraphics.framework */,
+				03ACC9D31CDFA75800656F5D /* CoreMotion.framework */,
+				03ACC9D41CDFA75800656F5D /* OpenAL.framework */,
+				03ACC9CE1CDFA73500656F5D /* UIKit.framework */,
+				B69A4873AD453213FB9FC82C /* MOE.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E9154217F235BB5B2BFC4BE /* SplinterSweets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F8504C071F5D00F3451B1D3 /* Build configuration list for PBXNativeTarget "SplinterSweets" */;
+			buildPhases = (
+				500AD4BF3AAD5E5D6382F974 /* Compile Sources (MOE) */,
+				5F361FCF5051FEEBA1525BEF /* Frameworks */,
+				10C312B5F96D82EA21671714 /* Resources */,
+				245921367BF4CB27ECA67B6F /* Sources */,
+				2DE5B6108342B5C22A1BA87A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SplinterSweets;
+			productName = SplinterSweets;
+			productReference = 9103A8B09D850A82D3B79162 /* SplinterSweets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95CBC8E4024D3F9F3C555DAB /* SplinterSweets-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36674DD4A611CA808853DDA /* Build configuration list for PBXNativeTarget "SplinterSweets-Test" */;
+			buildPhases = (
+				427461353A4BBC96FCF17C82 /* Compile Sources (MOE) */,
+				E7E24EB27AB7F85FFBF64DFC /* Frameworks */,
+				45E014C3162575659AD0D6A1 /* Resources */,
+				6DE67773C5E46D1D0892EF3A /* Sources */,
+				6A9F369CA2C2AA875B2749F0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			name = "SplinterSweets-Test";
+			productName = "SplinterSweets-Test";
+			productReference = 53ADB2FAAB1A5F2165A74CF8 /* SplinterSweets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0660C5D19255BDDA0452A92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					0E9154217F235BB5B2BFC4BE = {
+						DevelopmentTeam = JRW6H9E6XG;
+					};
+				};
+			};
+			buildConfigurationList = C55142AA649A48403E0908DF /* Build configuration list for PBXProject "SplinterSweets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B096E14E5628AB34171BB72;
+			productRefGroup = 11DFED721E7C0183D04B5B52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E9154217F235BB5B2BFC4BE /* SplinterSweets */,
+				95CBC8E4024D3F9F3C555DAB /* SplinterSweets-Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10C312B5F96D82EA21671714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29FEBC501D84731600238266 /* GoogleService-Info.plist in Resources */,
+				29C5B3B41D7D72F4003AA7FD /* GooglePlus.bundle in Resources */,
+				290DA2811D8726520063635C /* Default-568h@2x.png in Resources */,
+				29C5B3B51D7D72F4003AA7FD /* GoogleSignIn.bundle in Resources */,
+				29C5B3B61D7D72F4003AA7FD /* gpg.bundle in Resources */,
+				03E2841C1CDFA83B005BA4F0 /* assets in Resources */,
+				29E9AB0B1D7CD03300D40FE8 /* Images.xcassets in Resources */,
+				56E36A8BE759DE64A317E3BB /* preregister.txt in Resources */,
+				7BDED603662F8D6E54531A9A /* application.jar in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E014C3162575659AD0D6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		427461353A4BBC96FCF17C82 /* Compile Sources (MOE) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Sources (MOE)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n# Check directories set by xcconfigs\nif [ ! -d \"$MOE_PROJECT_DIR\" ]; then\n    echo \"$0:$LINENO:1: error: 'MOE_PROJECT_DIR' doesn't point to a directory!\"; exit 1;\nfi\nif [ ! -d \"$MOE_PROJECT_BUILD_DIR\" ]; then\n    echo \"$0:$LINENO:1: error: 'MOE_PROJECT_BUILD_DIR' doesn't point to a directory!\"; exit 1;\nfi\n\ncd \"$MOE_PROJECT_DIR/\"\n\nexport JAVA_HOME=$(/usr/libexec/java_home -v 1.8)\njava -version\n\n########################\n# Find Gradle\n########################\nfunction findGradle {\n\tCD=\"$PWD\"\n\twhile [ \"$CD\" != \"\" ]; do\n\t\techo \"Looking for gradlew in $CD\"\n\t\tif [ -x \"$CD/gradlew\" ]; then\n\t\t\tGRADLE_EXEC=$CD/gradlew\n\t\t\treturn 0\n\t\tfi\n\t\tCD=\"${CD%/*}\"\n\tdone\n\n\tDEFAULT_PATH=$(echo $PATH)\n\tsource ~/.bash_profile\n\texport PATH=$PATH:DEFAULT_PATH\n\n\techo \"Checking with 'which'\"\n\tGRADLE_EXEC=$(which 'gradle')\n\n\tif [ \"$GRADLE_EXEC\" = \"\" ]; then\n\t\techo \"Falling back to '/usr/local/bin/gradle'\"\n\t\tGRADLE_EXEC=/usr/local/bin/gradle\n\tfi\n}\n########################\n# Execute Gradle build\n########################\nif [ -z \"$MOE_GRADLE_EXTERNAL_BUILD\" ]; then\n    findGradle\n\n    export MOE_BUILD_SOURCE_SET=test\n    \"$GRADLE_EXEC\" --daemon moeXcodeInternal\nfi\n";
+		};
+		500AD4BF3AAD5E5D6382F974 /* Compile Sources (MOE) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Sources (MOE)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Check directories set by xcconfigs\nif [ ! -d \"$MOE_PROJECT_DIR\" ]; then\n    echo \"$0:$LINENO:1: error: 'MOE_PROJECT_DIR' doesn't point to a directory!\"; exit 1;\nfi\nif [ ! -d \"$MOE_PROJECT_BUILD_DIR\" ]; then\n    echo \"$0:$LINENO:1: error: 'MOE_PROJECT_BUILD_DIR' doesn't point to a directory!\"; exit 1;\nfi\n\ncd \"$MOE_PROJECT_DIR/\"\n\nexport JAVA_HOME=$(/usr/libexec/java_home -v 1.8)\njava -version\n\n########################\n# Find Gradle\n########################\nfunction findGradle {\n    CD=\"$PWD\"\n\twhile [ \"$CD\" != \"\" ]; do\n\t\techo \"Looking for gradlew in $CD\"\n\t\tif [ -x \"$CD/gradlew\" ]; then\n\t\t\tGRADLE_EXEC=$CD/gradlew\n\t\t\treturn 0\n\t\tfi\n\t\tCD=\"${CD%/*}\"\n\tdone\n\n\tDEFAULT_PATH=$(echo $PATH)\n\tsource ~/.bash_profile\n\texport PATH=$PATH:DEFAULT_PATH\n\n\techo \"Checking with 'which'\"\n\tGRADLE_EXEC=$(which 'gradle')\n\n\tif [ \"$GRADLE_EXEC\" = \"\" ]; then\n\t\techo \"Falling back to '/usr/local/bin/gradle'\"\n\t\tGRADLE_EXEC=/usr/local/bin/gradle\n\tfi\n}\n########################\n# Execute Gradle build\n########################\nif [ -z \"$MOE_GRADLE_EXTERNAL_BUILD\" ]; then\n    findGradle\n\n    \"$GRADLE_EXEC\" --daemon moeXcodeInternal\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		245921367BF4CB27ECA67B6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90295D2AF919CC851D72E450 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE67773C5E46D1D0892EF3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960FC30B876E2B7F65EBD965 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2267C903FAF96511A9A886F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${MOE_FRAMEWORK_PATH}",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SYMROOT = ../build/moe/xcodebuild/sym;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E5BEAA7CA2250C7D9E12D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Info-Test.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
+				PRODUCT_NAME = SplinterSweets;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		541E8AA924992CC70502ACAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED204BD74E9D5EA07497539 /* build.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_OPTIMIZATION = space;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = JRW6H9E6XG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Submodules/ShareKit/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/**";
+				INFOPLIST_FILE = SplinterSweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"${MOE_OTHER_LDFLAGS}",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.reimerm.splintersweets;
+				PRODUCT_NAME = SplinterSweets;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/**";
+			};
+			name = Debug;
+		};
+		7E761E6D43DBA5AA0D92A3B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Info-Test.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
+				PRODUCT_NAME = SplinterSweets;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		8637936F717132B8B36A8A3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED204BD74E9D5EA07497539 /* build.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_OPTIMIZATION = space;
+				CLANG_DEBUG_INFORMATION_LEVEL = default;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = JRW6H9E6XG;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Submodules/ShareKit/Frameworks",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/**";
+				INFOPLIST_FILE = SplinterSweets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"${MOE_OTHER_LDFLAGS}",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.reimerm.splintersweets;
+				PRODUCT_NAME = SplinterSweets;
+				SEPARATE_STRIP = YES;
+				STRIP_STYLE = all;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/**";
+			};
+			name = Release;
+		};
+		C7D9B5B039CBC05121BCD7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${MOE_FRAMEWORK_PATH}",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SYMROOT = ../build/moe/xcodebuild/sym;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F8504C071F5D00F3451B1D3 /* Build configuration list for PBXNativeTarget "SplinterSweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541E8AA924992CC70502ACAD /* Debug */,
+				8637936F717132B8B36A8A3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55142AA649A48403E0908DF /* Build configuration list for PBXProject "SplinterSweets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7D9B5B039CBC05121BCD7AD /* Debug */,
+				2267C903FAF96511A9A886F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F36674DD4A611CA808853DDA /* Build configuration list for PBXNativeTarget "SplinterSweets-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E761E6D43DBA5AA0D92A3B7 /* Debug */,
+				4E5BEAA7CA2250C7D9E12D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0660C5D19255BDDA0452A92 /* Project object */;
+}

@@ -1,0 +1,87 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'org.multi-os-engine:moe-gradle:1.+'
+    }
+}
+apply plugin: 'moe'
+apply plugin: 'kotlin'
+
+configurations { natives }
+
+task copyNatives << {
+    file("xcode/native/ios/").mkdirs();
+    def LD_FLAGS = "LIBGDX_NATIVES = "
+    configurations.natives.files.each { jar->
+        def outputDir = null
+        if (jar.name.endsWith("natives-ios.jar")) outputDir = file("xcode/native/ios")
+        if (outputDir != null) {
+            FileCollection fileCollection = zipTree(jar)
+            for (File libFile : fileCollection) {
+                if (libFile.getAbsolutePath().endsWith(".a") && !libFile.getAbsolutePath().contains("/tvos/")) {
+                    copy {
+                        from libFile.getAbsolutePath()
+                        into outputDir
+                    }
+                    LD_FLAGS += " -force_load \${SRCROOT}/native/ios/" + libFile.getName()
+                }
+            }
+        }
+    }
+    def outFlags = file("xcode/SplinterSweets/custom.xcconfig");
+    outFlags.write LD_FLAGS
+
+    def proguard = file("proguard.append.cfg")
+    if (proguard.exists()) {
+        if (!proguard.text.contains("-keep class com.badlogic.**")) {
+            proguard << "\n-keep class com.badlogic.** { *; }\n"
+            proguard << "-keep enum com.badlogic.** { *; }\n"
+            proguard << "-keep class apple.uikit.** { *; }\n"
+            proguard << "-keep class org.moe.** { *; }\n"
+        }
+    } else {
+        proguard = new File("proguard.append.cfg")
+        proguard << "\n-keep class com.badlogic.** { *; }\n"
+        proguard << "-keep enum com.badlogic.** { *; }\n"
+        proguard << "-keep class apple.uikit.** { *; }\n"
+        proguard << "-keep class org.moe.** { *; }\n"
+    }
+}
+
+task createBuildDir {
+    def file = new File('build/xcode/SplinterSweets.xcodeproj')
+    if (!file.exists()) {
+        file.mkdirs();
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', include: '*.jar')
+    compile project(":core")
+    compile "com.badlogicgames.gdx:gdx-backend-moe:$gdxVersion"
+    natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
+    natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-ios"
+    natives "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-ios"
+}
+
+sourceSets.main.java.srcDirs = [ "src/" ]
+
+moe {
+    proguardLevel 'all'
+    xcode {
+        mainTarget 'SplinterSweets'
+        packageName 'de.reimerm.splintersweets'
+        deploymentTarget = '8.0'
+        xcodeProjectDirPath 'xcode'
+        generateProject false
+    }
+}
+
+moeMainReleaseIphoneosXcodeBuild.dependsOn copyNatives
+moeMainDebugIphoneosXcodeBuild.dependsOn copyNatives
+moeMainReleaseIphonesimulatorXcodeBuild.dependsOn copyNatives
+moeMainDebugIphonesimulatorXcodeBuild.dependsOn copyNatives
