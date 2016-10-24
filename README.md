@@ -1,16 +1,21 @@
 # Splinter Sweets - A LibGDX and Kotlin Mobile Game Example
 
-This is an example of building a mobile game using the [libGDX](http://libgdx.badlogicgames.com/) game development framework and the Kotlin programming language.
+[![splinter-sweets](https://reimerm.de/wp-content/uploads/featured-splintersweets.png)](https://reimerm.de/2016/10/splinter-sweets/)
+
+This is an example of building a mobile game app using the [libGDX](http://libgdx.badlogicgames.com/) game development framework and the Kotlin programming language.
 
 The project includes the following features:
 * A simple mobile game to demonstrate the key concepts of the very popular [box2D physics library](https://github.com/libgdx/libgdx/wiki/Box2d).
 * The entire project is written in [Kotlin](https://kotlinlang.org/), which is a modern statically typed JVM language and a pretty interesting alternative for Java developers.
 
-![splinter-sweets](tools/playstore/screenshots/2.png)
-
 ## Try it here
-  * [Desktop](desktop/splintersweets_v1.jar)
+  * [Desktop](https://github.com/reime005/splintersweets/raw/master/desktop/splintersweets_v1.jar)
   * [Android](https://play.google.com/store/apps/details?id=de.reimerm.splintersweets)
+
+[![splinter-sweets-badge](https://reimerm.de/wp-content/uploads/2016/09/google-play-badge-e1474281064522.png)](https://play.google.com/store/apps/details?id=de.reimerm.splintersweets)
+
+## Have a look at my Blog
+Visit [reimerm.de](https://reimerm.de/) to follow me and my experience and tutorials on cross-platform mobile game development, kotlin and more.
 
 ## Build the Project
   * [Setup your development environment](https://github.com/libgdx/libgdx/wiki)
