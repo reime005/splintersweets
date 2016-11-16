@@ -19,9 +19,7 @@ package de.reimerm.splintersweets
 import com.badlogic.gdx.Files
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration
-
 import de.reimerm.splintersweets.main.MainGame
-import de.reimerm.splintersweets.utils.GameSettings
 
 object DesktopLauncher {
 
@@ -31,8 +29,8 @@ object DesktopLauncher {
         config.resizable = false
         config.addIcon("ic_launcher.png", Files.FileType.Internal)
         config.title = "Splinter Sweets"
-        config.width = (GameSettings.WIDTH * 1.25f).toInt()
-        config.height = (GameSettings.HEIGHT * 1.25f).toInt()
+        config.width = (2732 * 0.5f).toInt()
+        config.height = (2048 * 0.5f).toInt()
         LwjglApplication(MainGame, config)
     }
 }

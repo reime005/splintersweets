@@ -42,6 +42,7 @@ object Resources {
         BUTTON_PAUSE_NAME("button_pause"),
         BUTTON_RESUME_NAME("button_resume"),
         BUTTON_AGAIN_NAME("button_again"),
+        HIGHSCORE_PANE("pane"),
         BUTTON_QUIT_NAME("button_quit");
     }
 

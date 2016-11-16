@@ -20,12 +20,8 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Screen
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.scenes.scene2d.Stage
-import de.reimerm.splintersweets.abstract.AbstractStretchStage
-import de.reimerm.splintersweets.actors.BackgroundActor
 import de.reimerm.splintersweets.main.MainStage
-import de.reimerm.splintersweets.utils.AssetsManager
 import de.reimerm.splintersweets.utils.GameManager
-import de.reimerm.splintersweets.utils.Resources
 
 /**
  * Screen for the main game.
@@ -35,11 +31,9 @@ import de.reimerm.splintersweets.utils.Resources
 class MainScreen : Screen {
 
     private var stage: Stage
-    private var stretchStage: Stage
 
     constructor() {
         stage = MainStage()
-        stretchStage = MainStretchStage()
     }
 
     override fun show() {
@@ -60,10 +54,6 @@ class MainScreen : Screen {
         Gdx.gl.glClearColor(0f, 0f, 0f, 1f)
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
 
-        // Start the render process
-        stretchStage.viewport.apply()
-        stretchStage.draw()
-
         stage.viewport.apply()
         stage.draw()
         stage.act(delta)
@@ -74,13 +64,5 @@ class MainScreen : Screen {
 
     override fun dispose() {
         stage.dispose()
-        stretchStage.dispose()
-    }
-
-    private inner class MainStretchStage : AbstractStretchStage {
-
-        constructor() {
-            addActor(BackgroundActor(AssetsManager.textureMap[Resources.RegionNames.BACKGROUND_NAME.name]))
-        }
     }
 }
