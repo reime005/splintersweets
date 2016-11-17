@@ -100,9 +100,9 @@ class MenuScreen : Screen {
         table.add(playButton).expand().size(GameSettings.WIDTH * 0.15f).center().colspan(3)
         table.row()
         if (Gdx.app.type == Application.ApplicationType.Android || Gdx.app.type == Application.ApplicationType.iOS) {
-            table.add(LeaderBoardButton()).expand().size(GameSettings.WIDTH * 0.15f).center().colspan(3)
+            table.add(LeaderBoardButton()).expand().size(GameSettings.WIDTH * 0.15f).center().colspan(3).padBottom(GameSettings.WIDTH * 0.05f)
         } else {
-            table.add().expand().size(GameSettings.WIDTH * 0.15f).center().colspan(3)
+            table.add().expand().size(GameSettings.WIDTH * 0.15f).center().colspan(3).padBottom(GameSettings.WIDTH * 0.05f)
         }
 
         if (GameManager.appFirstStart) {

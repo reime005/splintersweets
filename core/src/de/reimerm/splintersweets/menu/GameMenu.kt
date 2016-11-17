@@ -90,7 +90,7 @@ class GameMenu : Disposable {
         val tableInner = Table()
         tableInner.setSize(GameSettings.WIDTH * 0.25f, GameSettings.HEIGHT * 0.175f)
 
-        tableInner.add(timerLabel).right().top().expand().padBottom(GameSettings.HEIGHT * 0.01f)
+        tableInner.add(timerLabel).right().top().expand().padBottom(GameSettings.HEIGHT * 0.001f)
         tableInner.row()
         tableInner.add(scoreLabel).right().bottom().expand()
 

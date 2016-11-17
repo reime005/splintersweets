@@ -35,17 +35,16 @@ object BodyUtils {
     }
 
     private fun getRandomPosition(): Vector2 {
-        val gap = (GameSettings.RADIUS * 2.5f).toInt()
+        val gap = (GameSettings.RADIUS * 3.5f).toInt()
         var x: Float = random.nextInt(GameSettings.WIDTH.toInt() - gap).toFloat()
         if (x <= gap) {
             x = gap.toFloat()
         }
 
-        var y: Float = random.nextInt((GameSettings.HEIGHT.toInt() - gap * 2f).toInt()).toFloat()
+        var y: Float = random.nextInt((GameSettings.HEIGHT.toInt() - gap * 1.25f).toInt()).toFloat()
         if (y <= gap) {
             y = gap.toFloat()
         }
-
 
         return Vector2(x, y)
     }

@@ -49,7 +49,7 @@ class MainStage : AbstractStretchStage {
 
     constructor() : super() {
         clear()
-        addActor(BackgroundActor(AssetsManager.textureMap[Resources.RegionNames.BACKGROUND_NAME.name]))
+        addBackground()
         GameManager.listener?.showAd()
         setupWorld()
         GameManager.reset()
@@ -66,6 +66,10 @@ class MainStage : AbstractStretchStage {
 //        super.draw()
 //        renderer.render(GameManager.world, camera.combined)
 //    }
+
+    private fun addBackground() {
+        addActor(BackgroundActor(AssetsManager.textureMap[Resources.RegionNames.BACKGROUND_NAME.name]))
+    }
 
     private fun setupWorld() {
         GameManager.world = WorldFactory.createWorld()
@@ -143,6 +147,7 @@ class MainStage : AbstractStretchStage {
 
     private fun onGameOver() {
         clear()
+        addBackground()
         GameManager.listener?.submitScore()
         GameManager.onGameOver()
         GameManager.listener?.hideAd()

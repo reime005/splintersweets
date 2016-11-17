@@ -164,7 +164,7 @@ class IOSGameEventListener(private val adView: GADBannerView?, private val gadIn
                 //                    arg0.get(0).setRange(new NSRange(1, 30));
 
                 leaderboards[0].loadScoresWithCompletionHandler { scores, nsError ->
-                    if (nsError == null) {
+                    if (nsError == null && scores != null) {
 
                         var value: Long = 0
                         val dataMap = LinkedHashMap<String, String>()
