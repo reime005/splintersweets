@@ -2,6 +2,7 @@ package de.reimerm.splintersweets
 
 import apple.coregraphics.struct.CGPoint
 import apple.coregraphics.struct.CGRect
+import apple.coregraphics.struct.CGSize
 import apple.foundation.NSArray
 import apple.uikit.UIApplication
 import apple.uikit.UIScreen
@@ -47,7 +48,7 @@ class IOSMoeLauncher protected constructor(peer: Pointer) : IOSApplication.Deleg
         adView?.setAdUnitID(GameSettings.ADMOB_BANNER_ID)
 
         val cgRect = CGRect()
-        cgRect.setSize(GoogleMobileAds.kGADAdSizeBanner().size())
+        cgRect.setSize(CGSize(GoogleMobileAds.kGADAdSizeBanner().size().width() * 0.7, GoogleMobileAds.kGADAdSizeBanner().size().height()))
 
         adView?.setFrame(cgRect)
         adView?.setRootViewController(uiViewController)

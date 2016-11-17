@@ -23,31 +23,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1</string>
+	<string>1.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
 	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>REVERSED_CLIENT_ID</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>1092360994879-8m1ki1gtjseni28ud2d9s3q2cnmfl4c0.apps.googleusercontent.com</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>CLIENT_ID</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.1092360994879-8m1ki1gtjseni28ud2d9s3q2cnmfl4c0</string>
-			</array>
-		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
@@ -58,99 +38,18 @@
 				<string>de.reimerm.splintersweets</string>
 			</array>
 		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.google.gppconsent</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.google.gppconsent</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>googlechrome-x-callback</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>googlechrome-x-callback</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>googlechrome:</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>googlechrome</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>hasgplus4://</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>hasgplus4</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.google.GooglePlayGames</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>GooglePlayGames.google.com</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.google.gppconsent.2.4.1</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.google.gppconsent.2.4.1</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>com.google.gppconsent.2.4.1</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com-google-gidconsent</string>
-			</array>
-		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.1</string>
 	<key>GPGApplicationID</key>
 	<string>159744795113</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>com.hmack.hammerize</string>
-		<string>com-google-gidconsent</string>
-		<string>com-google-gidconsent-youtube</string>
-		<string>com-google-gidconsent-google</string>
-		<string>com.google.gppconsent.2.4.1</string>
-		<string>com.google.gppconsent.2.4.0</string>
-		<string>com.google.gppconsent.2.3.0</string>
-		<string>com.google.gppconsent.2.2.0</string>
-		<string>com.google.gppconsent</string>
-		<string>hasgplus4</string>
-		<string>googlechrome-x-callback</string>
-		<string>googlechrome</string>
-		<string>com.google.GooglePlayGames</string>
-		<string>com.googleusercontent.apps.1092360994879-8m1ki1gtjseni28ud2d9s3q2cnmfl4c0</string>
+		<string>de.reimerm.bubblefling</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -187,7 +86,5 @@
 	<array>
 		<dict/>
 	</array>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
 </dict>
 </plist>
