@@ -2,7 +2,8 @@ package de.reimerm.splintersweets
 
 import apple.coregraphics.struct.CGPoint
 import apple.coregraphics.struct.CGRect
-import apple.foundation.*
+import apple.coregraphics.struct.CGSize
+import apple.foundation.NSArray
 import apple.uikit.UIApplication
 import apple.uikit.UIScreen
 import apple.uikit.UIViewController
@@ -19,10 +20,8 @@ import org.moe.googlemobileads.GADMobileAds
 import org.moe.googlemobileads.GADRequest
 import org.moe.googlemobileads.c.GoogleMobileAds
 import org.moe.natj.general.Pointer
-import org.moe.natj.general.ann.Mapped
 import org.moe.natj.objc.ann.ObjCClassName
 import org.moe.natj.objc.ann.Selector
-import org.moe.natj.objc.map.ObjCObjectMapper
 
 @ObjCClassName("IOSMoeLauncher")
 class IOSMoeLauncher protected constructor(peer: Pointer) : IOSApplication.Delegate(peer), UIApplicationDelegate {
@@ -49,7 +48,7 @@ class IOSMoeLauncher protected constructor(peer: Pointer) : IOSApplication.Deleg
         adView?.setAdUnitID(GameSettings.ADMOB_BANNER_ID)
 
         val cgRect = CGRect()
-        cgRect.setSize(GoogleMobileAds.kGADAdSizeBanner().size())
+        cgRect.setSize(CGSize(GoogleMobileAds.kGADAdSizeBanner().size().width() * 0.7, GoogleMobileAds.kGADAdSizeBanner().size().height()))
 
         adView?.setFrame(cgRect)
         adView?.setRootViewController(uiViewController)
@@ -67,7 +66,7 @@ class IOSMoeLauncher protected constructor(peer: Pointer) : IOSApplication.Deleg
         val gadInterstitial = GADInterstitial.alloc().initWithAdUnitID(GameSettings.ADMOB_INTERSTITIAL_ID)
         gadInterstitial.loadRequest(request)
 
-        GameManager.listener = IOSGameEventListener(adView, gadInterstitial, uiViewController)
+        GameManager.listener = IOSGameEventListener(adView, gadInterstitial, uiViewController, gdxApp!!)
 
         super<IOSApplication.Delegate>.applicationDidBecomeActive(application)
     }

@@ -30,7 +30,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.*
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable
-import de.reimerm.splintersweets.abstract.AbstractFitStage
 import de.reimerm.splintersweets.abstract.AbstractStretchStage
 import de.reimerm.splintersweets.actors.BackgroundActor
 import de.reimerm.splintersweets.actors.scene2d.AudioButton
@@ -48,14 +47,12 @@ import de.reimerm.splintersweets.utils.*
 class MenuScreen : Screen {
 
     private var stage: Stage
-    private var stretchStage: Stage
     private var exitButton: Button
 
     constructor() {
         val audioButton: Button
 
-        stage = MenuScreenFitStage()
-        stretchStage = MenuScreenStretchStage()
+        stage = MenuScreenStretchStage()
         Gdx.input.inputProcessor = stage
 
         val table: Table = Table()
@@ -103,9 +100,9 @@ class MenuScreen : Screen {
         table.add(playButton).expand().size(GameSettings.WIDTH * 0.15f).center().colspan(3)
         table.row()
         if (Gdx.app.type == Application.ApplicationType.Android || Gdx.app.type == Application.ApplicationType.iOS) {
-            table.add(LeaderBoardButton()).expand().size(GameSettings.WIDTH * 0.15f).center().colspan(3)
+            table.add(LeaderBoardButton()).expand().size(GameSettings.WIDTH * 0.15f).center().colspan(3).padBottom(GameSettings.WIDTH * 0.05f)
         } else {
-            table.add().expand().size(GameSettings.WIDTH * 0.15f).center().colspan(3)
+            table.add().expand().size(GameSettings.WIDTH * 0.15f).center().colspan(3).padBottom(GameSettings.WIDTH * 0.05f)
         }
 
         if (GameManager.appFirstStart) {
@@ -126,7 +123,6 @@ class MenuScreen : Screen {
 
     override fun resize(width: Int, height: Int) {
         stage.viewport.update(width, height, true)
-        stretchStage.viewport.update(width, height, true)
     }
 
     override fun hide() {
@@ -135,10 +131,6 @@ class MenuScreen : Screen {
     override fun render(delta: Float) {
         Gdx.gl.glClearColor(1f, 1f, 1f, 1f)
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
-
-        // Start the render process
-        stretchStage.viewport.apply()
-        stretchStage.draw()
 
         stage.viewport.apply()
         stage.draw()
@@ -150,10 +142,13 @@ class MenuScreen : Screen {
 
     override fun dispose() {
         stage.dispose()
-        stretchStage.dispose()
     }
 
-    private inner class MenuScreenFitStage : AbstractFitStage() {
+    private inner class MenuScreenStretchStage : AbstractStretchStage {
+
+        constructor() : super() {
+            addActor(BackgroundActor(AssetsManager.textureMap[Resources.RegionNames.BACKGROUND_NAME.name]))
+        }
 
         override fun keyDown(keyCode: Int): Boolean {
             when (keyCode) {
@@ -162,13 +157,6 @@ class MenuScreen : Screen {
                 }
             }
             return super.keyDown(keyCode)
-        }
-    }
-
-    private inner class MenuScreenStretchStage : AbstractStretchStage {
-
-        constructor() : super() {
-            addActor(BackgroundActor(AssetsManager.textureMap[Resources.RegionNames.BACKGROUND_NAME.name]))
         }
     }
 }

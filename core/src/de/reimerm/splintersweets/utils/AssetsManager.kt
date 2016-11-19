@@ -50,6 +50,9 @@ object AssetsManager : Disposable {
     lateinit var gameOverScoreFont: BitmapFont
     lateinit var smallFont: BitmapFont
 
+    lateinit var highscoreTitleFont: BitmapFont
+    lateinit var highscoreTextFont: BitmapFont
+
     fun loadSplashAssets() {
         manager.load(Resources.SPLASH_IMAGE_PATH, Texture::class.java)
         manager.finishLoading()
@@ -93,6 +96,10 @@ object AssetsManager : Disposable {
         gameOverScoreFont = manager[Resources.GAME_OVER_SCORE_FONT_PATH]
         gameOverScoreFont.region.texture.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear)
         gameOverScoreFont.data.scale(0.4f)
+
+        highscoreTitleFont = smallFont
+
+        highscoreTextFont = smallFont
     }
 
     private fun createAnimation(names: Array<String>): Animation {

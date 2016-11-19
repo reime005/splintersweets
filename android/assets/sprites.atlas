@@ -7,8 +7,8 @@ repeat: none
 background
   rotate: false
   xy: 2, 1026
-  size: 1600, 900
-  orig: 1600, 900
+  size: 1600, 960
+  orig: 1600, 960
   offset: 0, 0
   index: -1
 button_again
@@ -34,14 +34,14 @@ button_audio_on
   index: -1
 button_leaderboard
   rotate: false
-  xy: 1604, 1114
+  xy: 1604, 1174
   size: 180, 182
   orig: 180, 182
   offset: 0, 0
   index: -1
 button_pause
   rotate: false
-  xy: 1814, 1324
+  xy: 1814, 1384
   size: 180, 182
   orig: 180, 182
   offset: 0, 0
@@ -69,7 +69,7 @@ jellybig_red
   index: -1
 jellybig_red_anim_0
   rotate: false
-  xy: 1604, 1718
+  xy: 1604, 1778
   size: 208, 208
   orig: 208, 208
   offset: 0, 0
@@ -90,21 +90,21 @@ jellybig_red_anim_2
   index: -1
 jellybig_red_anim_3
   rotate: false
-  xy: 1604, 1508
+  xy: 1604, 1568
   size: 208, 208
   orig: 208, 208
   offset: 0, 0
   index: -1
 mmstroke_brown
   rotate: false
-  xy: 976, 896
+  xy: 1604, 1044
   size: 128, 128
   orig: 128, 128
   offset: 0, 0
   index: -1
 mmstroke_brown_anim_0
   rotate: false
-  xy: 1814, 1718
+  xy: 1814, 1778
   size: 208, 208
   orig: 208, 208
   offset: 0, 0
@@ -130,6 +130,13 @@ mmstroke_brown_anim_3
   orig: 208, 208
   offset: 0, 0
   index: -1
+pane
+  rotate: false
+  xy: 2024, 1976
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
 swirl_pink
   rotate: false
   xy: 814, 864
@@ -139,14 +146,14 @@ swirl_pink
   index: -1
 swirl_pink_anim_0
   rotate: false
-  xy: 1604, 1298
+  xy: 1604, 1358
   size: 208, 208
   orig: 208, 208
   offset: 0, 0
   index: -1
 swirl_pink_anim_1
   rotate: false
-  xy: 1814, 1508
+  xy: 1814, 1568
   size: 208, 208
   orig: 208, 208
   offset: 0, 0

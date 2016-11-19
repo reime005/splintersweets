@@ -71,7 +71,7 @@ dependencies {
 sourceSets.main.java.srcDirs = [ "src/" ]
 
 moe {
-    //proguardLevel 'all'
+    proguardLevel 'all'
     xcode {
         mainTarget 'SplinterSweets'
         packageName 'de.reimerm.splintersweets'

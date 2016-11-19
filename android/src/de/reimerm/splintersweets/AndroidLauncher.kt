@@ -52,7 +52,7 @@ class AndroidLauncher : AndroidApplication() {
 
         val layout = RelativeLayout(this)
         adView = AdView(this)
-        adView?.adSize = AdSize((AdSize.BANNER.width * 0.75f).toInt(), AdSize.BANNER.height)
+        adView?.adSize = AdSize.SMART_BANNER
         adView?.adUnitId = GameSettings.ADMOB_BANNER_ID
 
         GameManager.listener = AndroidGameEventListener(adView, context)
@@ -65,7 +65,7 @@ class AndroidLauncher : AndroidApplication() {
         layout.addView(gameView)
 
         val layoutParams = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
-        layoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP)
+        layoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM)
         layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT)
 
         layout.addView(adView, layoutParams)

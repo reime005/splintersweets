@@ -507,7 +507,7 @@
 				PRODUCT_NAME = SplinterSweets;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = "non-global";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/**";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -535,6 +535,7 @@
 				CLANG_DEBUG_INFORMATION_LEVEL = default;
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
 				DEVELOPMENT_TEAM = H584ESRQHE;
@@ -544,8 +545,9 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Submodules/ShareKit/Frameworks",
 				);
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/**";
 				INFOPLIST_FILE = SplinterSweets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -558,10 +560,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.reimerm.splintersweets;
 				PRODUCT_NAME = SplinterSweets;
-				SEPARATE_STRIP = YES;
-				STRIP_STYLE = all;
+				SEPARATE_STRIP = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Submodules/**";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

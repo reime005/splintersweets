@@ -22,24 +22,22 @@ import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.physics.box2d.Body
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer
 import com.badlogic.gdx.utils.Array
-import de.reimerm.splintersweets.abstract.AbstractFitStage
+import de.reimerm.splintersweets.abstract.AbstractStretchStage
+import de.reimerm.splintersweets.actors.BackgroundActor
 import de.reimerm.splintersweets.actors.Frame
 import de.reimerm.splintersweets.actors.SpawnCircle
 import de.reimerm.splintersweets.actors.scene2d.GameOverTable
 import de.reimerm.splintersweets.enums.GameState
 import de.reimerm.splintersweets.menu.GameMenu
 import de.reimerm.splintersweets.screens.MenuScreen
-import de.reimerm.splintersweets.utils.AudioUtils
-import de.reimerm.splintersweets.utils.GameManager
-import de.reimerm.splintersweets.utils.GameSettings
-import de.reimerm.splintersweets.utils.WorldFactory
+import de.reimerm.splintersweets.utils.*
 
 /**
  * The main logic for the game. The Stage may has many actors and a world, handles events, ...
  *
  * Created by Marius Reimer on 10-Jun-16.
  */
-class MainStage : AbstractFitStage {
+class MainStage : AbstractStretchStage {
 
     private var renderer: Box2DDebugRenderer = Box2DDebugRenderer()
 
@@ -51,6 +49,7 @@ class MainStage : AbstractFitStage {
 
     constructor() : super() {
         clear()
+        addBackground()
         GameManager.listener?.showAd()
         setupWorld()
         GameManager.reset()
@@ -67,6 +66,10 @@ class MainStage : AbstractFitStage {
 //        super.draw()
 //        renderer.render(GameManager.world, camera.combined)
 //    }
+
+    private fun addBackground() {
+        addActor(BackgroundActor(AssetsManager.textureMap[Resources.RegionNames.BACKGROUND_NAME.name]))
+    }
 
     private fun setupWorld() {
         GameManager.world = WorldFactory.createWorld()
@@ -144,6 +147,7 @@ class MainStage : AbstractFitStage {
 
     private fun onGameOver() {
         clear()
+        addBackground()
         GameManager.listener?.submitScore()
         GameManager.onGameOver()
         GameManager.listener?.hideAd()
