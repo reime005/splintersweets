@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Marius Reimer
+ * Copyright (c) 2017. Marius Reimer
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ import de.reimerm.splintersweets.utils.GameSettings
  */
 class AndroidGameEventListener : GameEventListener {
 
-    private lateinit var context: Context
+    private var context: Context
     private val SHOW = 1
     private val HIDE = 0
     private var adView: AdView? = null

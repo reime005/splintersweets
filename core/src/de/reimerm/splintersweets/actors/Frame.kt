@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Marius Reimer
+ * Copyright (c) 2017. Marius Reimer
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

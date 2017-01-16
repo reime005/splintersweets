@@ -2,7 +2,7 @@
 //  GADVideoControllerDelegate.h
 //  Google Mobile Ads SDK
 //
-//  Copyright (c) 2016 Google Inc. All rights reserved.
+//  Copyright (c) 2017 Google Inc. All rights reserved.
 //
 
 #import <GoogleMobileAds/GADVideoController.h>

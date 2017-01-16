@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Marius Reimer
+ * Copyright (c) 2017. Marius Reimer
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,7 +43,7 @@ object AssetsManager : Disposable {
     var textureMap: HashMap<String, TextureRegion> = HashMap()
         private set
 
-    var animationMap: HashMap<String, Animation> = HashMap()
+    var animationMap: HashMap<String, Animation<TextureRegion>> = HashMap()
         private set
 
     lateinit var gameOverFont: BitmapFont
@@ -102,16 +102,16 @@ object AssetsManager : Disposable {
         highscoreTextFont = smallFont
     }
 
-    private fun createAnimation(names: Array<String>): Animation {
+    private fun createAnimation(regionNames: Array<String>): Animation<TextureRegion> {
         val frames = com.badlogic.gdx.utils.Array<TextureRegion>()
-        frames.setSize(names.size)
+        frames.setSize(regionNames.size)
 
-        for (i in names.indices) {
-            val path = names[i]
+        for (i in regionNames.indices) {
+            val path = regionNames[i]
             frames[i] = textureAtlas.findRegion(path)
         }
 
-        return Animation(GameSettings.ANIMATION_FRAME_DURATION, frames)
+        return Animation<TextureRegion>(0.1f, frames)
     }
 
     override fun dispose() {

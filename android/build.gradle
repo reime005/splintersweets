@@ -3,12 +3,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    buildToolsVersion "24.0.3"
-    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+    compileSdkVersion 25
     defaultConfig {
         applicationId "de.reimerm.splintersweets"
         minSdkVersion 11
-        targetSdkVersion 19
+        targetSdkVersion 25
         signingConfig signingConfigs.debug
         // Enabling multidex support.
         multiDexEnabled true

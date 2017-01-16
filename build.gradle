@@ -13,10 +13,10 @@ buildscript {
     ext {
         appName = "Splinter Sweets"
 
-        kotlin_version = '1.0.4'
+        kotlin_version = '1.0.5-2'
         junitVersion = '4.12'
         
-        gdxVersion = json.libgdxSnapshot
+        gdxVersion = '1.9.5'
         androidToolsVersion = json.androidBuildtoolsVersion
         androidSDKVersion = json.androidSDKVersion
         androidGradleToolsVersion = json.androidGradleToolVersion
@@ -29,14 +29,14 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.android.tools.build:gradle:2.2.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.google.gms:google-services:3.0.0'
     }
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = "2.13"
+    gradleVersion = "2.14.1"
 }
 
 allprojects {

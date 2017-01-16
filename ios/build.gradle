@@ -73,11 +73,9 @@ sourceSets.main.java.srcDirs = [ "src/" ]
 moe {
     proguardLevel 'all'
     xcode {
+	    project 'xcode/SplinterSweets.xcodeproj'
         mainTarget 'SplinterSweets'
-        packageName 'de.reimerm.splintersweets'
-        deploymentTarget = '8.0'
-        xcodeProjectDirPath 'xcode'
-        generateProject false
+		testTarget 'SplinterSweets-Test'
     }
 }
 

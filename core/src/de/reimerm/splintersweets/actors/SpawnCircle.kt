@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Marius Reimer
+ * Copyright (c) 2017. Marius Reimer
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +19,7 @@ package de.reimerm.splintersweets.actors
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.g2d.Animation
 import com.badlogic.gdx.graphics.g2d.Batch
+import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.badlogic.gdx.physics.box2d.Body
 import de.reimerm.splintersweets.enums.Color
 import de.reimerm.splintersweets.enums.GameState
@@ -31,7 +32,7 @@ class SpawnCircle : GameActor {
 
     private var removeTimer = 0f
     private var radius = GameSettings.RADIUS
-    private var animation: Animation? = null
+    private var animation: Animation<TextureRegion>? = null
     private var reverse = false
 
     constructor(body: Body, color: Color?, reverse: Boolean) : super(body) {
