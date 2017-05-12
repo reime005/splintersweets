@@ -16,7 +16,7 @@ buildscript {
         kotlin_version = '1.0.5-2'
         junitVersion = '4.12'
         
-        gdxVersion = '1.9.5'
+        gdxVersion = '1.9.7-SNAPSHOT'
         androidToolsVersion = json.androidBuildtoolsVersion
         androidSDKVersion = json.androidSDKVersion
         androidGradleToolsVersion = json.androidGradleToolVersion
