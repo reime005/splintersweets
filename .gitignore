@@ -110,3 +110,7 @@ build/
 ## OS Specific
 .DS_Store
 Thumbs.db
+
+## iOS Specific
+xcuserdata/
+ios/xcode/native/ios/

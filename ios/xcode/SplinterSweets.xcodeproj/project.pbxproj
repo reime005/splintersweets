@@ -54,6 +54,7 @@
 		7BDED603662F8D6E54531A9A /* application.jar in Resources */ = {isa = PBXBuildFile; fileRef = EA29F3AB9D4D3E916902DF5B /* application.jar */; };
 		90295D2AF919CC851D72E450 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF7C331588944C9129B593B /* main.cpp */; };
 		960FC30B876E2B7F65EBD965 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF7C331588944C9129B593B /* main.cpp */; };
+		BB8CF65D731DFB71749BFB28 /* moe-main-interfaces.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E996F3914FE5153E9425 /* moe-main-interfaces.m */; };
 		D54D78ADDFD09C6CB7AFE5CF /* MOE.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B69A4873AD453213FB9FC82C /* MOE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		03ACC9D41CDFA75800656F5D /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		03ACC9DC1CDFA76400656F5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		03E2841B1CDFA83B005BA4F0 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../../android/assets; sourceTree = "<group>"; };
+		1873E996F3914FE5153E9425 /* moe-main-interfaces.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "moe-main-interfaces.m"; path = "../build/moe/main/ui-headers/moe-main-interfaces.m"; sourceTree = "<group>"; };
 		1ED204BD74E9D5EA07497539 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
 		290DA2801D8726520063635C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		292962D51D8D6B3C00929CEC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -219,6 +221,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		586D0EC9CECFD9C6565070B4 /* Multi-OS Engine */ = {
+			isa = PBXGroup;
+			children = (
+				1873E996F3914FE5153E9425 /* moe-main-interfaces.m */,
+			);
+			name = "Multi-OS Engine";
+			sourceTree = "<group>";
+		};
 		8B096E14E5628AB34171BB72 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +238,7 @@
 				446457971163AC6B44192DC7 /* SplinterSweets */,
 				D23FFB4E57C7ECB40006115B /* Frameworks */,
 				11DFED721E7C0183D04B5B52 /* Products */,
+				586D0EC9CECFD9C6565070B4 /* Multi-OS Engine */,
 			);
 			sourceTree = "<group>";
 		};
@@ -324,7 +335,7 @@
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					0E9154217F235BB5B2BFC4BE = {
-						DevelopmentTeam = H584ESRQHE;
+						DevelopmentTeam = XGKHW634KL;
 					};
 				};
 			};
@@ -407,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90295D2AF919CC851D72E450 /* main.cpp in Sources */,
+				BB8CF65D731DFB71749BFB28 /* moe-main-interfaces.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +500,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = H584ESRQHE;
+				DEVELOPMENT_TEAM = XGKHW634KL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -538,7 +550,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
-				DEVELOPMENT_TEAM = H584ESRQHE;
+				DEVELOPMENT_TEAM = XGKHW634KL;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
