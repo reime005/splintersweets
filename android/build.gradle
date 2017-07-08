@@ -3,12 +3,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    buildToolsVersion "25.0.2"
-    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+    compileSdkVersion 26
     defaultConfig {
         applicationId "de.reimerm.splintersweets"
         minSdkVersion 11
-        targetSdkVersion 25
+        targetSdkVersion 26
         signingConfig signingConfigs.debug
         // Enabling multidex support.
         multiDexEnabled true
@@ -51,8 +51,8 @@ android {
 configurations { natives }
 
 dependencies {
-    sourceCompatibility = 1.7
-    targetCompatibility = 1.7
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
     compile project(':core')
     compile "com.badlogicgames.gdx:gdx-backend-android:$gdxVersion"
     natives "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-armeabi"
