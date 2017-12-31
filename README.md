@@ -1,6 +1,6 @@
 # Splinter Sweets - A LibGDX and Kotlin Mobile Game Example
 
-[![splinter-sweets](https://reimerm.de/wp-content/uploads/featured-splintersweets.png)](https://reimerm.de/2016/10/splinter-sweets/)
+![splinter-sweets](https://raw.githubusercontent.com/reime005/splintersweets/featured-splintersweets.png)
 
 This is an example of building a mobile game app using the [libGDX](http://libgdx.badlogicgames.com/) game development framework and the Kotlin programming language.
 
@@ -12,10 +12,10 @@ The project includes the following features:
   * [Desktop](https://github.com/reime005/splintersweets/raw/master/desktop/splintersweets_v1.jar)
   * [Android](https://play.google.com/store/apps/details?id=de.reimerm.splintersweets)
 
-[![splinter-sweets-badge](https://reimerm.de/wp-content/uploads/2016/09/google-play-badge-e1474281064522.png)](https://play.google.com/store/apps/details?id=de.reimerm.splintersweets)
+[![splinter-sweets-badge](https://mariusreimer.com/wp-content/uploads/2016/09/google-play-badge-e1474281064522.png)](https://play.google.com/store/apps/details?id=de.reimerm.splintersweets)
 
 ## Have a look at my Blog
-Visit [reimerm.de](https://reimerm.de/) to follow me and my experience and tutorials on cross-platform mobile game development, kotlin and more.
+Visit [mariusreimer.com](https://mariusreimer.com/) to follow me and my experience and tutorials on cross-platform mobile game development, kotlin and more.
 
 ## Build the Project
   * [Setup your development environment](https://github.com/libgdx/libgdx/wiki)
@@ -31,6 +31,6 @@ Visit [reimerm.de](https://reimerm.de/) to follow me and my experience and tutor
     * You can find the resulting jar in the _desktop/build/libs_ folder.
 
 ## License
-Copyright © 2016 Marius Reimer
+Copyright © 2018 Marius Reimer
 
 Distributed under the [Apache 2 License](http://www.apache.org/licenses/LICENSE-2.0.html).
