@@ -1,6 +1,6 @@
 # Splinter Sweets - A LibGDX and Kotlin Mobile Game Example
 
-![splinter-sweets](https://raw.githubusercontent.com/reime005/splintersweets/featured-splintersweets.png)
+![splinter-sweets](featured-splintersweets.png)
 
 This is an example of building a mobile game app using the [libGDX](http://libgdx.badlogicgames.com/) game development framework and the Kotlin programming language.
 
