@@ -15,7 +15,6 @@
 		03ACC9DA1CDFA75800656F5D /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ACC9D41CDFA75800656F5D /* OpenAL.framework */; };
 		03ACC9DD1CDFA76400656F5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ACC9DC1CDFA76400656F5D /* QuartzCore.framework */; };
 		03E2841C1CDFA83B005BA4F0 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 03E2841B1CDFA83B005BA4F0 /* assets */; };
-		0C1BAA8C7E83493FC22B03BF /* MOE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69A4873AD453213FB9FC82C /* MOE.framework */; };
 		290DA2811D8726520063635C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 290DA2801D8726520063635C /* Default-568h@2x.png */; };
 		292962D61D8D6B3C00929CEC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292962D51D8D6B3C00929CEC /* OpenGLES.framework */; };
 		299B9B201DDCDF130077AE49 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299B9B1F1DDCDF130077AE49 /* GoogleMobileAds.framework */; };
@@ -47,13 +46,10 @@
 		29FEBC4A1D841F4E00238266 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FEBC491D841F4E00238266 /* GLKit.framework */; };
 		29FEBC4C1D841F7200238266 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FEBC4B1D841F7200238266 /* EventKit.framework */; };
 		29FEBC4E1D841F9F00238266 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FEBC4D1D841F9F00238266 /* EventKitUI.framework */; };
-		29FEBC501D84731600238266 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29FEBC4F1D84731600238266 /* GoogleService-Info.plist */; };
-		3CE6F44CC68F58F172F95F17 /* MOE.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B69A4873AD453213FB9FC82C /* MOE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		56E36A8BE759DE64A317E3BB /* preregister.txt in Resources */ = {isa = PBXBuildFile; fileRef = F06A5645587B524FEAAB4FF4 /* preregister.txt */; };
 		58CC9A2221B6D58243831227 /* MOE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69A4873AD453213FB9FC82C /* MOE.framework */; };
 		7BDED603662F8D6E54531A9A /* application.jar in Resources */ = {isa = PBXBuildFile; fileRef = EA29F3AB9D4D3E916902DF5B /* application.jar */; };
 		90295D2AF919CC851D72E450 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF7C331588944C9129B593B /* main.cpp */; };
-		960FC30B876E2B7F65EBD965 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FF7C331588944C9129B593B /* main.cpp */; };
 		BB8CF65D731DFB71749BFB28 /* moe-main-interfaces.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E996F3914FE5153E9425 /* moe-main-interfaces.m */; };
 		D54D78ADDFD09C6CB7AFE5CF /* MOE.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B69A4873AD453213FB9FC82C /* MOE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -66,17 +62,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D54D78ADDFD09C6CB7AFE5CF /* MOE.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6A9F369CA2C2AA875B2749F0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3CE6F44CC68F58F172F95F17 /* MOE.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,10 +110,8 @@
 		29FEBC491D841F4E00238266 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		29FEBC4B1D841F7200238266 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		29FEBC4D1D841F9F00238266 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
-		29FEBC4F1D84731600238266 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SplinterSweets/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		36C285E0AB4EC84EF958EE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FF7C331588944C9129B593B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		53ADB2FAAB1A5F2165A74CF8 /* SplinterSweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplinterSweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9103A8B09D850A82D3B79162 /* SplinterSweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplinterSweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69A4873AD453213FB9FC82C /* MOE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOE.framework; sourceTree = MOE_FRAMEWORK_PATH; };
 		EA29F3AB9D4D3E916902DF5B /* application.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = application.jar; path = ../build/moe/main/application.jar; sourceTree = SOURCE_ROOT; };
@@ -180,14 +163,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7E24EB27AB7F85FFBF64DFC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C1BAA8C7E83493FC22B03BF /* MOE.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -195,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				9103A8B09D850A82D3B79162 /* SplinterSweets.app */,
-				53ADB2FAAB1A5F2165A74CF8 /* SplinterSweets.app */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -233,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				290DA2801D8726520063635C /* Default-568h@2x.png */,
-				29FEBC4F1D84731600238266 /* GoogleService-Info.plist */,
 				29E9AB0A1D7CD03300D40FE8 /* Images.xcassets */,
 				446457971163AC6B44192DC7 /* SplinterSweets */,
 				D23FFB4E57C7ECB40006115B /* Frameworks */,
@@ -308,23 +281,6 @@
 			productReference = 9103A8B09D850A82D3B79162 /* SplinterSweets.app */;
 			productType = "com.apple.product-type.application";
 		};
-		95CBC8E4024D3F9F3C555DAB /* SplinterSweets-Test */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F36674DD4A611CA808853DDA /* Build configuration list for PBXNativeTarget "SplinterSweets-Test" */;
-			buildPhases = (
-				427461353A4BBC96FCF17C82 /* Compile Sources (MOE) */,
-				E7E24EB27AB7F85FFBF64DFC /* Frameworks */,
-				45E014C3162575659AD0D6A1 /* Resources */,
-				6DE67773C5E46D1D0892EF3A /* Sources */,
-				6A9F369CA2C2AA875B2749F0 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			name = "SplinterSweets-Test";
-			productName = "SplinterSweets-Test";
-			productReference = 53ADB2FAAB1A5F2165A74CF8 /* SplinterSweets.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -335,7 +291,7 @@
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					0E9154217F235BB5B2BFC4BE = {
-						DevelopmentTeam = XGKHW634KL;
+						DevelopmentTeam = 933YKK3ZT7;
 					};
 				};
 			};
@@ -344,6 +300,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -353,7 +310,6 @@
 			projectRoot = "";
 			targets = (
 				0E9154217F235BB5B2BFC4BE /* SplinterSweets */,
-				95CBC8E4024D3F9F3C555DAB /* SplinterSweets-Test */,
 			);
 		};
 /* End PBXProject section */
@@ -363,7 +319,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29FEBC501D84731600238266 /* GoogleService-Info.plist in Resources */,
 				290DA2811D8726520063635C /* Default-568h@2x.png in Resources */,
 				03E2841C1CDFA83B005BA4F0 /* assets in Resources */,
 				29E9AB0B1D7CD03300D40FE8 /* Images.xcassets in Resources */,
@@ -372,30 +327,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45E014C3162575659AD0D6A1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		427461353A4BBC96FCF17C82 /* Compile Sources (MOE) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Compile Sources (MOE)";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "\n# Check directories set by xcconfigs\nif [ ! -d \"$MOE_PROJECT_DIR\" ]; then\n    echo \"$0:$LINENO:1: error: 'MOE_PROJECT_DIR' doesn't point to a directory!\"; exit 1;\nfi\nif [ ! -d \"$MOE_PROJECT_BUILD_DIR\" ]; then\n    echo \"$0:$LINENO:1: error: 'MOE_PROJECT_BUILD_DIR' doesn't point to a directory!\"; exit 1;\nfi\n\ncd \"$MOE_PROJECT_DIR/\"\n\nexport JAVA_HOME=$(/usr/libexec/java_home -v 1.8)\njava -version\n\n########################\n# Find Gradle\n########################\nfunction findGradle {\n\tCD=\"$PWD\"\n\twhile [ \"$CD\" != \"\" ]; do\n\t\techo \"Looking for gradlew in $CD\"\n\t\tif [ -x \"$CD/gradlew\" ]; then\n\t\t\tGRADLE_EXEC=$CD/gradlew\n\t\t\treturn 0\n\t\tfi\n\t\tCD=\"${CD%/*}\"\n\tdone\n\n\tDEFAULT_PATH=$(echo $PATH)\n\tsource ~/.bash_profile\n\texport PATH=$PATH:DEFAULT_PATH\n\n\techo \"Checking with 'which'\"\n\tGRADLE_EXEC=$(which 'gradle')\n\n\tif [ \"$GRADLE_EXEC\" = \"\" ]; then\n\t\techo \"Falling back to '/usr/local/bin/gradle'\"\n\t\tGRADLE_EXEC=/usr/local/bin/gradle\n\tfi\n}\n########################\n# Execute Gradle build\n########################\nif [ -z \"$MOE_GRADLE_EXTERNAL_BUILD\" ]; then\n    findGradle\n\n    export MOE_BUILD_SOURCE_SET=test\n    \"$GRADLE_EXEC\" --daemon moeXcodeInternal\nfi\n";
-		};
 		500AD4BF3AAD5E5D6382F974 /* Compile Sources (MOE) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,14 +353,6 @@
 			files = (
 				90295D2AF919CC851D72E450 /* main.cpp in Sources */,
 				BB8CF65D731DFB71749BFB28 /* moe-main-interfaces.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6DE67773C5E46D1D0892EF3A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				960FC30B876E2B7F65EBD965 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,20 +402,6 @@
 			};
 			name = Release;
 		};
-		4E5BEAA7CA2250C7D9E12D78 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEAD_CODE_STRIPPING = NO;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "Info-Test.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
-				PRODUCT_NAME = SplinterSweets;
-				STRIP_STYLE = "non-global";
-			};
-			name = Release;
-		};
 		541E8AA924992CC70502ACAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1ED204BD74E9D5EA07497539 /* build.xcconfig */;
@@ -499,8 +411,9 @@
 				ASSETCATALOG_COMPILER_OPTIMIZATION = space;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 12;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = XGKHW634KL;
+				DEVELOPMENT_TEAM = 933YKK3ZT7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -510,6 +423,7 @@
 				INFOPLIST_FILE = SplinterSweets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"${MOE_OTHER_LDFLAGS}",
@@ -520,20 +434,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = "non-global";
 				USER_HEADER_SEARCH_PATHS = "";
-			};
-			name = Debug;
-		};
-		7E761E6D43DBA5AA0D92A3B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEAD_CODE_STRIPPING = NO;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "Info-Test.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
-				PRODUCT_NAME = SplinterSweets;
-				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
@@ -548,9 +448,10 @@
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 12;
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
-				DEVELOPMENT_TEAM = XGKHW634KL;
+				DEVELOPMENT_TEAM = 933YKK3ZT7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -565,6 +466,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"${MOE_OTHER_LDFLAGS}",
@@ -647,15 +549,6 @@
 			buildConfigurations = (
 				C7D9B5B039CBC05121BCD7AD /* Debug */,
 				2267C903FAF96511A9A886F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F36674DD4A611CA808853DDA /* Build configuration list for PBXNativeTarget "SplinterSweets-Test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E761E6D43DBA5AA0D92A3B7 /* Debug */,
-				4E5BEAA7CA2250C7D9E12D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
